@@ -1,0 +1,49 @@
+
+int foo(int i){
+	int j = 1;
+	while(1){
+		if((j++ % 9000000) == 0){
+			printf("FOO	1\n");
+		}
+	j = 2;
+	j = 4 + j + (j * j);
+	}
+
+}
+
+int foo2(int i){
+	int j = 1;
+	while(1){
+		if((j++ % 9000000) == 0){
+			printf("FOO	2\n");
+		}
+	}
+}
+
+int foo3(int i){
+	int j = 1;
+	while(1){
+		if((j++ % 9000000) == 0){
+			printf("FOO	3\n");
+		}
+	}
+}
+
+int main2(int a){
+	int i;
+	int j;
+
+	printf("Test\n");
+	init();
+
+	create( &foo, 1, 30);
+	create( &foo2, 1, 5);
+	create( &foo3, 1, 20);
+
+	while(1){
+		if((j++ % 9000000) == 0){
+			printf("Test	0\n");
+		}
+	}
+}
+

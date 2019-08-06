@@ -1,0 +1,16 @@
+/*
+ * semantic.h
+ *
+ *  Created on: 22/05/2009
+ *      Author: andreu
+ */
+
+#ifndef SEMANTIC_H_
+#define SEMANTIC_H_
+
+
+#endif /* SEMANTIC_H_ */
+
+#include "../include/compiler.h"
+
+int semantic_entry(TRANSLATION_UNIT *tu);

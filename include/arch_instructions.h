@@ -1,0 +1,115 @@
+/*
+ * Compiler
+Copyright (C) 2019  Andreu Carminati
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+ * arch_instructions.h
+ *
+ *  Created on: 05/03/2009
+ *      Author: andreu
+ */
+#include "compiler.h"
+
+#ifndef ARCH_INSTRUCTIONS_H_
+#define ARCH_INSTRUCTIONS_H_
+
+/**
+ * Generate code to add Symbols
+ * input: stream, operand1_dst, operand2,
+ * result: code to operand1_dst = operand1_dst + operand2
+ * output: 0 to success, -1 to error
+ */
+int add(char*, SYMBOL*, SYMBOL*);
+/**
+ * Generate code to sub Symbols
+ * input: stream, operand1_dst, operand2,
+ * result: code to operand1_dst = operand1_dst - operand2
+ * output: 0 to success, -1 to error
+ */
+
+int sub(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to div Symbols
+ * input: stream, operand1_dst, operand2,
+ * result: code to operand1_dst = operand1_dst / operand2
+ * output: 0 to success, -1 to error
+ */
+int divi(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to mult Symbols
+ * input: stream, operand1_dst, operand2,
+ * result: code to operand1_dst = operand1_dst * operand2
+ * output: 0 to success, -1 to error
+ */
+int mult(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to move Symbols
+ * input: stream, operand1_dst, operand2,
+ * result: code to operand1_dst = operand2
+ * output: 0 to success, -1 to error
+ */
+int move(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to goto
+ * input: stream, operand
+ * result: ip at symbol address
+ * output: 0 to success, -1 to error
+ */
+int goto_inst(char*, SYMBOL*);
+
+/**
+ * Generate code to call function
+ * input: stream, variable length arguments
+ * result: code to arguments stack, and call to function
+ * output: 0 to success, -1 to error
+ */
+int call_function(char*, ...);
+
+/**
+ * Generate code to compare Symbols (compare if equal)
+ * input: stream, operand1, operand2
+ * result: code to compare Symbols (equal)
+ * output: 0 to success, -1 to error
+ */
+int comp(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to compare Symbols (compare if not equal)
+ * input: stream, operand1, operand2
+ * result: code to compare Symbols (not equal)
+ * output: 0 to success, -1 to error
+ */
+int comp_neq(char*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to jump if arguments are equal
+ * input: stream, jump target, Symbol 1 and 2 do compare
+ * result: code to jump if Symbols are equal
+ * output: 0 to success, -1 to error
+ */
+int jump_if_equal(char*, SYMBOL*, SYMBOL*, SYMBOL*);
+
+/**
+ * Generate code to jump if arguments are not equal
+ * input: stream, jump target, Symbol 1 and 2 do compare
+ * result: code to jump if Symbols are not equal
+ * output: 0 to success, -1 to error
+ */
+int jump_if_not_equal(char*, SYMBOL*, SYMBOL*, SYMBOL*);
+
+#endif /* ARCH_INSTRUCTIONS_H_ */

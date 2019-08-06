@@ -1,0 +1,14 @@
+/*
+ * error_report.h
+ *
+ *  Created on: 18/06/2009
+ *      Author: andreu
+ */
+
+#ifndef ERROR_REPORT_H_
+#define ERROR_REPORT_H_
+
+void type_incompatibility(int line, int type_n1, int type_n2);
+void iteration_type_incompatibility(int line, int type_n);
+
+#endif /* ERROR_REPORT_H_ */

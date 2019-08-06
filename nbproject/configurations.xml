@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Arquivos de Cabeçalho"
+                   projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="x86" displayName="x86" projectFiles="true">
+          <itemPath>include/x86/assembler.h</itemPath>
+          <itemPath>include/x86/x86code_generator.h</itemPath>
+        </logicalFolder>
+        <itemPath>include/arch_instructions.h</itemPath>
+        <itemPath>include/compiler.h</itemPath>
+        <itemPath>include/error_report.h</itemPath>
+        <itemPath>include/list.h</itemPath>
+        <itemPath>include/semantic.h</itemPath>
+        <itemPath>include/symbol_table.h</itemPath>
+        <itemPath>include/tree_constructor.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Arquivos de Código-Fonte"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="x86" displayName="x86" projectFiles="true">
+          <itemPath>src/x86/assembler.c</itemPath>
+          <itemPath>src/x86/x86code_generator.c</itemPath>
+        </logicalFolder>
+        <itemPath>src/build.sh</itemPath>
+        <itemPath>src/code_generator.c</itemPath>
+        <itemPath>src/error_report.c</itemPath>
+        <itemPath>src/lex.yy.c</itemPath>
+        <itemPath>src/lexic.lex</itemPath>
+        <itemPath>src/lexico.zip</itemPath>
+        <itemPath>src/list.c</itemPath>
+        <itemPath>src/main.c</itemPath>
+        <itemPath>src/semantic.c</itemPath>
+        <itemPath>src/sint.c</itemPath>
+        <itemPath>src/sintatic.yacc</itemPath>
+        <itemPath>src/symbol_table.c</itemPath>
+        <itemPath>src/test.txt</itemPath>
+        <itemPath>src/y.tab.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="x86" displayName="x86" projectFiles="true">
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Arquivos de Recurso"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Arquivos de Teste"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="include/arch_instructions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/error_report.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/semantic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/symbol_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tree_constructor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/x86/assembler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/x86/x86code_generator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/build.sh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/code_generator.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/error_report.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lexico.zip" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/semantic.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sint.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/symbol_table.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/x86/assembler.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/x86/x86code_generator.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/y.tab.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="include/arch_instructions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/error_report.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/semantic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/symbol_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tree_constructor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/x86/assembler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/x86/x86code_generator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/build.sh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/code_generator.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/error_report.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lex.yy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lexic.lex" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/lexico.zip" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/semantic.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sint.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sintatic.yacc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/symbol_table.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/x86/assembler.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/x86/x86code_generator.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/y.tab.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
